@@ -580,9 +580,7 @@ to not follow this code style here.
 
 ### Solid
 
-Use [`@nanostores/solid`] and `useStore()` composable function
-to get store’s value and re-render component on store’s changes.
-
+Use [@nanostores/solid] and useStore() to get a reactive accessor for the store's value, which automatically updates the parts of the DOM that read it when the store changes.
 ```js
 import { useStore } from '@nanostores/solid'
 import { $profile } from '../stores/profile.js'
